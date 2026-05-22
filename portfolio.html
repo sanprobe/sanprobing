@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portfolio | Hwa Ran</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+
+<input type="checkbox" id="menu-toggle">
+
+<header>
+    <nav class="navbar">
+        <label for="menu-toggle" class="menu-icon">☰</label>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="booking.html">Booking</a></li>
+        </ul>
+    </nav>
+</header>
+
+<aside class="sidebar">
+    <h3>Hwa Ran</h3>
+    <ul>
+        <li><a href="https://www.instagram.com/hwa.ran_tattoo/" target="_blank">Instagram</a></li>
+        <li>Artworks</li>
+        <li>Contact</li>
+    </ul>
+</aside>
+
+<label for="menu-toggle" class="overlay"></label>
+
+<main class="main-content">
+    <section class="portfolio fade-in">
+
+        <h2>Portfolio</h2>
+        <p class="portfolio-subtitle">Selected Works</p>
+
+        <div class="portfolio-grid">
+
+            <!-- 사진마다: a[href=#id] 로 열고, lightbox 안의 a[href=#] 로 닫음 -->
+
+            <a href="#lb1" class="lb-thumb">
+                <img src="img/wk1.jpg" alt="Work 1">
+            </a>
+            <div id="lb1" class="lightbox">
+                <a href="#" class="lb-close" aria-label="Close"></a>
+                <img src="img/wk1.jpg" alt="Work 1">
+            </div>
+
+            <a href="#lb2" class="lb-thumb">
+                <img src="img/wk2.jpg" alt="Work 2">
+            </a>
+            <div id="lb2" class="lightbox">
+                <a href="#" class="lb-close" aria-label="Close"></a>
+                <img src="img/wk2.jpg" alt="Work 2">
+            </div>
+
+            <a href="#lb3" class="lb-thumb">
+                <img src="img/wk3.jpg" alt="Work 3">
+            </a>
+            <div id="lb3" class="lightbox">
+                <a href="#" class="lb-close" aria-label="Close"></a>
+                <img src="img/wk3.jpg" alt="Work 3">
+            </div>
+
+            <a href="#lb4" class="lb-thumb">
+                <img src="img/wk4.jpg" alt="Work 4">
+            </a>
+            <div id="lb4" class="lightbox">
+                <a href="#" class="lb-close" aria-label="Close"></a>
+                <img src="img/wk4.jpg" alt="Work 4">
+            </div>
+
+            <a href="#lb5" class="lb-thumb">
+                <img src="img/wk5.jpg" alt="Work 5">
+            </a>
+            <div id="lb5" class="lightbox">
+                <a href="#" class="lb-close" aria-label="Close"></a>
+                <img src="img/wk5.jpg" alt="Work 5">
+            </div>
+
+        </div>
+
+    </section>
+</main>
+
+<footer class="bottom-banner">
+    <p>&copy; 2026 HwaRan</p>
+</footer>
+
+</body>
+</html>
