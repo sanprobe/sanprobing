@@ -17,7 +17,7 @@
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="portfolio.html" class="active">Portfolio</a></li>
             <li><a href="booking.html">Booking</a></li>
         </ul>
     </nav>
@@ -40,16 +40,18 @@
         <h2>Portfolio</h2>
         <p class="portfolio-subtitle">Selected Works</p>
 
+        <!-- See More toggle (checkbox trick) -->
+        <input type="checkbox" id="show-more">
+
         <div class="portfolio-grid">
 
-            <!-- 사진마다: a[href=#id] 로 열고, lightbox 안의 a[href=#] 로 닫음 -->
-
+            <!-- first 6 immer da -->
             <a href="#lb1" class="lb-thumb">
-                <img src="img/wk1.jpg" alt="Work 1">
+                <img src="img/wk1.png" alt="Work 1">
             </a>
             <div id="lb1" class="lightbox">
                 <a href="#" class="lb-close" aria-label="Close"></a>
-                <img src="img/wk1.jpg" alt="Work 1">
+                <img src="img/wk1.png" alt="Work 1">
             </div>
 
             <a href="#lb2" class="lb-thumb">
@@ -84,7 +86,48 @@
                 <img src="img/wk5.jpg" alt="Work 5">
             </div>
 
+            <a href="#lb6" class="lb-thumb">
+                <img src="img/wk6.jpg" alt="Work 6">
+            </a>
+            <div id="lb6" class="lightbox">
+                <a href="#" class="lb-close" aria-label="Close"></a>
+                <img src="img/wk6.jpg" alt="Work 6">
+            </div>
+
+            <!--extra — hide default, show-more:checked dann an -->
+            <a href="#lb7" class="lb-thumb extra">
+                <img src="img/wk7.jpg" alt="Work 7">
+            </a>
+            <div id="lb7" class="lightbox">
+                <a href="#" class="lb-close" aria-label="Close"></a>
+                <img src="img/wk7.jpg" alt="Work 7">
+            </div>
+
+            <a href="#lb8" class="lb-thumb extra">
+                <img src="img/wk8.jpg" alt="Work 8">
+            </a>
+            <div id="lb8" class="lightbox">
+                <a href="#" class="lb-close" aria-label="Close"></a>
+                <img src="img/wk8.jpg" alt="Work 8">
+            </div>
+
+            <a href="#lb9" class="lb-thumb extra">
+                <img src="img/wk9.jpg" alt="Work 9">
+            </a>
+            <div id="lb9" class="lightbox">
+                <a href="#" class="lb-close" aria-label="Close"></a>
+                <img src="img/wk9.jpg" alt="Work 9">
+            </div>
+
+            <!-- wenn mehr dann, class="lb-thumb extra" hinzufuegen -->
+
         </div>
+
+        <!-- btn  — jeweils  -->
+        <label for="show-more" class="see-more-btn">
+            <span class="label-more">See More</span>
+            <span class="label-less">Show Less</span>
+        </label>
 
     </section>
 </main>
