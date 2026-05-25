@@ -18,7 +18,7 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="booking.html">Booking</a></li>
+            <li><a href="booking.html" class="active">Booking</a></li>
         </ul>
     </nav>
 </header>
@@ -41,10 +41,14 @@
         <p>Contact via Open KakaoTalk</p>
 
         <div class="qr-area">
-            <img src="./img/qr.jpg" alt="KakaoTalk QR Code"/>
+            <img src="img/qr.jpeg" alt="KakaoTalk QR Code"/>
         </div>
 
-        <form class="booking-form">
+   <form class="booking-form"
+              action="mailto:soalte@icloud.com"
+              method="post"
+              enctype="text/plain">
+
             <input type="text"  placeholder="Your Name"  required>
             <input type="email" placeholder="Your Email" required>
             <textarea placeholder="Describe your tattoo idea..." rows="6" required></textarea>
